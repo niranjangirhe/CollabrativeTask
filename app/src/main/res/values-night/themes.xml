@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CollabrativeTask" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purpleLight</item>
+        <item name="colorPrimaryVariant">@color/purpleDark</item>
+        <item name="colorOnPrimary">@color/Cyan</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Cyan</item>
+        <item name="colorSecondaryVariant">@color/Cyan30</item>
+        <item name="colorOnSecondary">@color/Black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
