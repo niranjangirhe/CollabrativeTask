@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerViewMain = findViewById(R.id.taskrecycleview);
         addTaskBtn = findViewById(R.id.AddTaskButton);
-
-
         addTaskBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
