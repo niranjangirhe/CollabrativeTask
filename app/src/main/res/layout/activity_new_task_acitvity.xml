@@ -98,8 +98,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/TaskNameFromAddNormal"
+        app:layout_constraintTop_toBottomOf="@+id/TaskNameFromAddNormal"
         app:srcCompat="@drawable/description" />
 
     <ImageView
@@ -121,7 +121,7 @@
         app:srcCompat="@drawable/subtaskarrow" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/TaskNameFromAddNormal"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -141,7 +141,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/AddTaskFromNormal"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginEnd="32dp"
@@ -158,8 +158,8 @@
         android:textSize="20sp"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/White70"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+        app:layout_constraintBottom_toBottomOf="@+id/AddTaskFromNormal"
+        app:layout_constraintEnd_toEndOf="@+id/AddTaskFromNormal"
+        app:layout_constraintStart_toStartOf="@+id/AddTaskFromNormal"
+        app:layout_constraintTop_toTopOf="@+id/AddTaskFromNormal" />
 </androidx.constraintlayout.widget.ConstraintLayout>
