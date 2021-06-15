@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.ngsolutions.collabrativetask.adapters.MainTaskAdapter;
 import com.ngsolutions.collabrativetask.models.MainTaskModel;
@@ -16,11 +19,22 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerViewMain;
     ArrayList<MainTaskModel> mainTaskModels = new ArrayList<>();
     MainTaskAdapter mainTaskAdapter;
+    ImageButton addTaskBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerViewMain = findViewById(R.id.taskrecycleview);
+        addTaskBtn = findViewById(R.id.AddTaskButton);
+
+
+        addTaskBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NewTaskAcitvity.class);
+                startActivity(intent);
+            }
+        });
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
         recyclerViewMain.setLayoutManager(layoutManager);
